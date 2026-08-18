@@ -1,0 +1,12 @@
+# GitHub Analytics Database
+# Python dependencies
+
+# Synthetic data generation
+Faker>=37.0,<38.0
+
+# Data processing
+pandas>=2.2,<3.0
+numpy>=2.0,<3.0
+
+# PostgreSQL database connectivity
+psycopg2-binary>=2.9,<3.0
