@@ -286,3 +286,112 @@ Measures repository adoption and community participation.
 **fork_id**
 
 ---
+
+# 4. Entity Summary
+
+| Entity                  | Primary Key            | Business Purpose                     |
+| ----------------------- | ---------------------- | ------------------------------------ |
+| Users                   | user_id                | Stores GitHub user information       |
+| Organizations           | organization_id        | Stores organization information      |
+| Organization Members    | membership_id          | Links users with organizations       |
+| Repositories            | repository_id          | Stores repository details            |
+| Programming Languages   | language_id            | Stores programming languages         |
+| Repository Languages    | repository_language_id | Links repositories with languages    |
+| Repository Contributors | contributor_id         | Links contributors with repositories |
+| Branches                | branch_id              | Stores repository branches           |
+| Commits                 | commit_id              | Stores commit history                |
+| Pull Requests           | pull_request_id        | Stores pull requests                 |
+| Pull Request Reviews    | review_id              | Stores code reviews                  |
+| Issues                  | issue_id               | Stores issue tracking data           |
+| Releases                | release_id             | Stores release information           |
+| Stars                   | star_id                | Stores repository stars              |
+| Forks                   | fork_id                | Stores repository forks              |
+
+---
+
+# 5. Entity Classification
+
+The entities can be grouped into logical categories.
+
+## Master Entities
+
+* Users
+* Organizations
+* Programming Languages
+
+These provide reference data used by other entities.
+
+---
+
+## Transactional Entities
+
+* Repositories
+* Branches
+* Commits
+* Pull Requests
+* Pull Request Reviews
+* Issues
+* Releases
+
+These record day-to-day software development activities.
+
+---
+
+## Bridge (Junction) Entities
+
+* Organization Members
+* Repository Languages
+* Repository Contributors
+
+These resolve many-to-many relationships between core entities.
+
+---
+
+## Community Entities
+
+* Stars
+* Forks
+
+These capture user engagement and repository popularity.
+
+---
+
+# 6. Design Considerations
+
+The entity model has been designed to:
+
+* Follow Third Normal Form (3NF).
+* Eliminate unnecessary data redundancy.
+* Maintain referential integrity.
+* Support scalable ETL pipelines.
+* Enable efficient SQL queries.
+* Simplify analytical reporting.
+* Support Medallion Architecture.
+* Allow future expansion with additional GitHub features such as Discussions, Projects, Packages, Security Alerts, GitHub Actions, and Milestones.
+
+---
+
+# 7. Expected Outcome
+
+The identified entities provide a complete representation of the GitHub software development ecosystem.
+
+Together, they enable analysis of:
+
+* Developer productivity
+* Repository performance
+* Collaboration
+* Code review processes
+* Issue management
+* Release management
+* Programming language adoption
+* Community engagement
+
+These entities will be transformed into relational database tables and connected through well-defined primary key and foreign key relationships.
+
+---
+
+# 8. Conclusion
+
+The entity identification process establishes the structural foundation of the GitHub Analytics Database. These fifteen entities accurately model the core components of GitHub and provide the basis for database schema design, ER diagrams, ETL pipelines, advanced SQL analysis, and business intelligence reporting.
+
+The next phase of the project is **Relationship Design**, where the relationships, cardinalities, and foreign key dependencies between these entities will be formally defined.
