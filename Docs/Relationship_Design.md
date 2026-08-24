@@ -468,3 +468,105 @@ repositories.repository_id
 ```
 
 ---
+
+# 5. Cardinality Summary
+
+| Parent Entity | Child Entity         | Relationship |
+| ------------- | -------------------- | ------------ |
+| Users         | Repositories         | 1 : N        |
+| Organizations | Repositories         | 1 : N        |
+| Users         | Organization Members | 1 : N        |
+| Organizations | Organization Members | 1 : N        |
+| Repositories  | Branches             | 1 : N        |
+| Branches      | Commits              | 1 : N        |
+| Users         | Commits              | 1 : N        |
+| Repositories  | Commits              | 1 : N        |
+| Repositories  | Pull Requests        | 1 : N        |
+| Pull Requests | Pull Request Reviews | 1 : N        |
+| Repositories  | Issues               | 1 : N        |
+| Repositories  | Releases             | 1 : N        |
+| Users         | Stars                | 1 : N        |
+| Users         | Forks                | 1 : N        |
+
+---
+
+# 6. Many-to-Many Relationships
+
+The following relationships are resolved using bridge tables.
+
+| Relationship                         | Bridge Table            |
+| ------------------------------------ | ----------------------- |
+| Users ↔ Organizations                | organization_members    |
+| Repositories ↔ Programming Languages | repository_languages    |
+| Users ↔ Repositories                 | repository_contributors |
+
+---
+
+# 7. Database Integrity Rules
+
+The following integrity rules will be enforced:
+
+* Every table must have a Primary Key.
+* Foreign Keys must reference valid parent records.
+* Child records cannot exist without corresponding parent records.
+* Duplicate primary keys are not allowed.
+* Referential integrity must be maintained throughout the ETL pipeline.
+* Null values are permitted only where business rules allow.
+
+---
+
+# 8. Relationship Hierarchy
+
+```text
+Users
+│
+├── Repositories
+│      ├── Branches
+│      │      └── Commits
+│      │
+│      ├── Pull Requests
+│      │      └── Pull Request Reviews
+│      │
+│      ├── Issues
+│      ├── Releases
+│      ├── Stars
+│      └── Forks
+│
+├── Organization Members
+│
+└── Repository Contributors
+
+Organizations
+│
+├── Repositories
+└── Organization Members
+
+Programming Languages
+│
+└── Repository Languages
+```
+
+---
+
+# 9. Expected Outcome
+
+The relationship model provides a robust and scalable relational foundation for the GitHub Analytics Database.
+
+It ensures:
+
+* Accurate entity relationships
+* Reliable ETL processing
+* Efficient SQL JOIN operations
+* High data integrity
+* Scalable database design
+* Optimized analytical reporting
+
+This relationship structure directly supports the Medallion Architecture and enables meaningful business insights through advanced SQL queries and Power BI dashboards.
+
+---
+
+# 10. Conclusion
+
+The Relationship Design establishes how all business entities interact within the GitHub Analytics Database. By defining clear cardinalities, bridge tables, and referential integrity rules, this document provides the blueprint for the ER Diagram, database schema, synthetic data generation, and ETL implementation.
+
+The next phase is **ER Diagram Design**, where these relationships will be visualized into a complete Entity Relationship Diagram before implementing the PostgreSQL database.
