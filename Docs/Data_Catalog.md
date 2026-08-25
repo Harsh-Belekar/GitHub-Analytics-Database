@@ -652,3 +652,61 @@ Forks represent copies of repositories created by users for independent developm
 | forked_at | TIMESTAMP | No | | Fork timestamp | 2026-03-20 14:32:51 |
 
 ---
+
+# Entity Relationship Summary
+
+| Parent Table          | Child Table             | Relationship |
+| --------------------- | ----------------------- | ------------ |
+| programming_languages | repository_languages    | One-to-Many  |
+| users                 | repositories            | One-to-Many  |
+| users                 | commits                 | One-to-Many  |
+| users                 | pull_requests           | One-to-Many  |
+| users                 | issues                  | One-to-Many  |
+| users                 | stars                   | One-to-Many  |
+| users                 | forks                   | One-to-Many  |
+| users                 | organization_members    | One-to-Many  |
+| organizations         | organization_members    | One-to-Many  |
+| organizations         | repositories            | One-to-Many  |
+| repositories          | branches                | One-to-Many  |
+| repositories          | commits                 | One-to-Many  |
+| repositories          | pull_requests           | One-to-Many  |
+| repositories          | issues                  | One-to-Many  |
+| repositories          | releases                | One-to-Many  |
+| repositories          | stars                   | One-to-Many  |
+| repositories          | forks                   | One-to-Many  |
+| repositories          | repository_languages    | One-to-Many  |
+| repositories          | repository_contributors | One-to-Many  |
+| pull_requests         | pull_request_reviews    | One-to-Many  |
+
+---
+
+# Planned Data Volume
+
+| Table                   | Estimated Rows |
+| ----------------------- | -------------: |
+| programming_languages   |             20 |
+| users                   |          5,000 |
+| organizations           |            300 |
+| organization_members    |          8,000 |
+| repositories            |         12,000 |
+| repository_languages    |         20,000 |
+| repository_contributors |         60,000 |
+| branches                |         45,000 |
+| commits                 |        500,000 |
+| pull_requests           |         80,000 |
+| pull_request_reviews    |        120,000 |
+| issues                  |        100,000 |
+| releases                |         25,000 |
+| stars                   |        900,000 |
+| forks                   |        150,000 |
+
+**Total Estimated Records:** **≈ 2,025,320**
+
+---
+
+# Notes
+
+* All datasets will be generated using Python.
+* Raw datasets may intentionally contain controlled data quality issues to support the Bronze layer of the Medallion Architecture.
+* The Silver layer will standardize and clean the data.
+* The Gold layer will contain analytics-ready tables optimized for SQL reporting and Power BI dashboards.
