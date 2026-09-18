@@ -1,0 +1,77 @@
+2026-08-10 19:10:24,786 | INFO | ======================================================================
+2026-08-10 19:10:24,787 | INFO | GitHub Data WAREHOUSE SETUP - STARTING
+2026-08-10 19:10:24,787 | INFO | ======================================================================
+2026-08-10 19:10:24,787 | INFO | Connecting to PostgreSQL Database...
+2026-08-10 19:10:24,962 | INFO | Database connection Established Successfully.
+
+2026-08-10 19:10:24,963 | INFO | ======================================================================
+2026-08-10 19:10:24,963 | INFO | DROPPING EXISTING TABLES
+2026-08-10 19:10:24,963 | INFO | ======================================================================
+2026-08-10 19:10:24,970 | INFO | Dropped table: programming_languages
+2026-08-10 19:10:24,972 | INFO | Dropped table: users
+2026-08-10 19:10:24,972 | INFO | Dropped table: organizations
+2026-08-10 19:10:24,973 | INFO | Dropped table: organization_members
+2026-08-10 19:10:24,973 | INFO | Dropped table: repositories
+2026-08-10 19:10:24,974 | INFO | Dropped table: repository_languages
+2026-08-10 19:10:24,974 | INFO | Dropped table: repository_contributors
+2026-08-10 19:10:24,975 | INFO | Dropped table: branches
+2026-08-10 19:10:24,975 | INFO | Dropped table: commits
+2026-08-10 19:10:24,975 | INFO | Dropped table: pull_requests
+2026-08-10 19:10:24,976 | INFO | Dropped table: pull_request_reviews
+2026-08-10 19:10:24,976 | INFO | Dropped table: issues
+2026-08-10 19:10:24,976 | INFO | Dropped table: releases
+2026-08-10 19:10:24,977 | INFO | Dropped table: stars
+2026-08-10 19:10:24,977 | INFO | Dropped table: forks
+2026-08-10 19:10:24,977 | INFO | ======================================================================
+2026-08-10 19:10:24,978 | INFO | Dropped 15/15 tables
+2026-08-10 19:10:24,978 | INFO | ======================================================================
+
+2026-08-10 19:10:24,978 | INFO | ======================================================================
+2026-08-10 19:10:24,978 | INFO | Starting Bronze Layer Table Creation Process...
+2026-08-10 19:10:24,978 | INFO | ======================================================================
+2026-08-10 19:10:24,979 | INFO | Executing: programming_languages Table Query
+2026-08-10 19:10:25,189 | INFO | programming_languages Created Successfully in (0.21s).
+2026-08-10 19:10:25,189 | INFO | Executing: users Table Query
+2026-08-10 19:10:25,232 | INFO | users Created Successfully in (0.04s).
+2026-08-10 19:10:25,232 | INFO | Executing: organizations Table Query
+2026-08-10 19:10:25,239 | INFO | organizations Created Successfully in (0.01s).
+2026-08-10 19:10:25,240 | INFO | Executing: organization_members Table Query
+2026-08-10 19:10:25,242 | INFO | organization_members Created Successfully in (0.00s).
+2026-08-10 19:10:25,242 | INFO | Executing: repositories Table Query
+2026-08-10 19:10:25,249 | INFO | repositories Created Successfully in (0.01s).
+2026-08-10 19:10:25,249 | INFO | Executing: repository_languages Table Query
+2026-08-10 19:10:25,253 | INFO | repository_languages Created Successfully in (0.00s).
+2026-08-10 19:10:25,253 | INFO | Executing: repository_contributors Table Query
+2026-08-10 19:10:25,255 | INFO | repository_contributors Created Successfully in (0.00s).
+2026-08-10 19:10:25,255 | INFO | Executing: branches Table Query
+2026-08-10 19:10:25,258 | INFO | branches Created Successfully in (0.00s).
+2026-08-10 19:10:25,258 | INFO | Executing: commits Table Query
+2026-08-10 19:10:25,263 | INFO | commits Created Successfully in (0.00s).
+2026-08-10 19:10:25,263 | INFO | Executing: pull_requests Table Query
+2026-08-10 19:10:25,265 | INFO | pull_requests Created Successfully in (0.00s).
+2026-08-10 19:10:25,265 | INFO | Executing: pull_request_reviews Table Query
+2026-08-10 19:10:25,273 | INFO | pull_request_reviews Created Successfully in (0.01s).
+2026-08-10 19:10:25,273 | INFO | Executing: issues Table Query
+2026-08-10 19:10:25,276 | INFO | issues Created Successfully in (0.00s).
+2026-08-10 19:10:25,276 | INFO | Executing: releases Table Query
+2026-08-10 19:10:25,281 | INFO | releases Created Successfully in (0.00s).
+2026-08-10 19:10:25,281 | INFO | Executing: stars Table Query
+2026-08-10 19:10:25,284 | INFO | stars Created Successfully in (0.00s).
+2026-08-10 19:10:25,284 | INFO | Executing: forks Table Query
+2026-08-10 19:10:25,287 | INFO | forks Created Successfully in (0.00s).
+2026-08-10 19:10:25,287 | INFO | ======================================================================
+2026-08-10 19:10:25,287 | INFO | TABLE CREATION SUMMARY
+2026-08-10 19:10:25,287 | INFO | ======================================================================
+2026-08-10 19:10:25,287 | INFO | Total operations: 15
+2026-08-10 19:10:25,287 | INFO | Successful: 15
+2026-08-10 19:10:25,288 | INFO | Failed: 0
+2026-08-10 19:10:25,288 | INFO | ======================================================================
+
+2026-08-10 19:10:25,288 | INFO | All Tables created successfully!
+
+2026-08-10 19:10:25,288 | INFO | ======================================================================
+2026-08-10 19:10:25,288 | INFO | BRONZE LAYER TABLES CREATION COMPLETED SUCCESSFULLY
+2026-08-10 19:10:25,288 | INFO | Total time: 0.50 seconds
+2026-08-10 19:10:25,288 | INFO | ======================================================================
+
+2026-08-10 19:10:25,298 | INFO | Database connection closed.
