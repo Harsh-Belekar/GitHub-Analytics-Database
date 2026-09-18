@@ -1,0 +1,71 @@
+2026-08-10 19:18:44,843 | INFO | ======================================================================
+2026-08-10 19:18:44,843 | INFO | BRONZE LAYER DATA INSERTION PROCESS STARTED
+2026-08-10 19:18:44,844 | INFO | ======================================================================
+2026-08-10 19:18:44,844 | INFO | Connecting to PostgreSQL database...
+2026-08-10 19:18:44,934 | INFO | Database connection established successfully.
+
+2026-08-10 19:18:44,934 | INFO | ======================================================================
+2026-08-10 19:18:44,934 | INFO | TRUNCATING TABLES
+2026-08-10 19:18:44,934 | INFO | ======================================================================
+2026-08-10 19:18:44,948 | INFO | Truncated bronze.programming_languages: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,958 | INFO | Truncated bronze.users: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,967 | INFO | Truncated bronze.organizations: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,971 | INFO | Truncated bronze.organization_members: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,981 | INFO | Truncated bronze.repositories: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,985 | INFO | Truncated bronze.repository_languages: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,989 | INFO | Truncated bronze.repository_contributors: 0 rows deleted, 0 remaining
+2026-08-10 19:18:44,993 | INFO | Truncated bronze.branches: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,003 | INFO | Truncated bronze.commits: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,007 | INFO | Truncated bronze.pull_requests: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,017 | INFO | Truncated bronze.pull_request_reviews: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,021 | INFO | Truncated bronze.issues: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,031 | INFO | Truncated bronze.releases: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,035 | INFO | Truncated bronze.stars: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,039 | INFO | Truncated bronze.forks: 0 rows deleted, 0 remaining
+2026-08-10 19:18:45,039 | INFO | ======================================================================
+2026-08-10 19:18:45,039 | INFO | All tables truncated successfully
+2026-08-10 19:18:45,039 | INFO | ======================================================================
+
+2026-08-10 19:18:45,040 | INFO | Started inserting 'programming_languages.csv' data into 'bronze.programming_languages' (File size: 0.00 MB)
+2026-08-10 19:18:45,073 | INFO | Completed 'bronze.programming_languages': 20 rows inserted in 0.03s (666 rows/sec)
+2026-08-10 19:18:45,073 | INFO | Started inserting 'users.csv' data into 'bronze.users' (File size: 1.21 MB)
+2026-08-10 19:18:45,238 | INFO | Completed 'bronze.users': 5,050 rows inserted in 0.16s (31,562 rows/sec)
+2026-08-10 19:18:45,238 | INFO | Started inserting 'organizations.csv' data into 'bronze.organizations' (File size: 0.04 MB)
+2026-08-10 19:18:45,282 | INFO | Completed 'bronze.organizations': 300 rows inserted in 0.04s (7,500 rows/sec)
+2026-08-10 19:18:45,283 | INFO | Started inserting 'organization_members.csv' data into 'bronze.organization_members' (File size: 0.37 MB)
+2026-08-10 19:18:45,382 | INFO | Completed 'bronze.organization_members': 8,080 rows inserted in 0.1s (80,800 rows/sec)
+2026-08-10 19:18:45,382 | INFO | Started inserting 'repositories.csv' data into 'bronze.repositories' (File size: 1.69 MB)
+2026-08-10 19:18:45,838 | INFO | Completed 'bronze.repositories': 12,000 rows inserted in 0.46s (26,086 rows/sec)
+2026-08-10 19:18:45,839 | INFO | Started inserting 'repository_languages.csv' data into 'bronze.repository_languages' (File size: 0.49 MB)
+2026-08-10 19:18:45,984 | INFO | Completed 'bronze.repository_languages': 24,096 rows inserted in 0.15s (160,640 rows/sec)
+2026-08-10 19:18:45,984 | INFO | Started inserting 'repository_contributors.csv' data into 'bronze.repository_contributors' (File size: 2.52 MB)
+2026-08-10 19:18:46,689 | INFO | Completed 'bronze.repository_contributors': 42,629 rows inserted in 0.71s (60,040 rows/sec)
+2026-08-10 19:18:46,690 | INFO | Started inserting 'branches.csv' data into 'bronze.branches' (File size: 2.50 MB)
+2026-08-10 19:18:47,078 | INFO | Completed 'bronze.branches': 45,534 rows inserted in 0.39s (116,753 rows/sec)
+2026-08-10 19:18:47,078 | INFO | Started inserting 'commits.csv' data into 'bronze.commits' (File size: 57.20 MB)
+2026-08-10 19:18:52,898 | INFO | Completed 'bronze.commits': 505,000 rows inserted in 5.82s (86,769 rows/sec)
+2026-08-10 19:18:52,899 | INFO | Started inserting 'pull_requests.csv' data into 'bronze.pull_requests' (File size: 6.91 MB)
+2026-08-10 19:18:53,921 | INFO | Completed 'bronze.pull_requests': 80,800 rows inserted in 1.02s (79,215 rows/sec)
+2026-08-10 19:18:53,921 | INFO | Started inserting 'pull_request_reviews.csv' data into 'bronze.pull_request_reviews' (File size: 9.52 MB)
+2026-08-10 19:18:55,232 | INFO | Completed 'bronze.pull_request_reviews': 121,200 rows inserted in 1.31s (92,519 rows/sec)
+2026-08-10 19:18:55,232 | INFO | Started inserting 'issues.csv' data into 'bronze.issues' (File size: 9.50 MB)
+2026-08-10 19:18:56,837 | INFO | Completed 'bronze.issues': 101,000 rows inserted in 1.6s (63,125 rows/sec)
+2026-08-10 19:18:56,838 | INFO | Started inserting 'releases.csv' data into 'bronze.releases' (File size: 2.54 MB)
+2026-08-10 19:18:57,131 | INFO | Completed 'bronze.releases': 24,327 rows inserted in 0.29s (83,886 rows/sec)
+2026-08-10 19:18:57,131 | INFO | Started inserting 'stars.csv' data into 'bronze.stars' (File size: 34.68 MB)
+2026-08-10 19:19:04,862 | INFO | Completed 'bronze.stars': 909,000 rows inserted in 7.73s (117,593 rows/sec)
+2026-08-10 19:19:04,862 | INFO | Started inserting 'forks.csv' data into 'bronze.forks' (File size: 6.50 MB)
+2026-08-10 19:19:05,923 | INFO | Completed 'bronze.forks': 151,500 rows inserted in 1.06s (142,924 rows/sec)
+2026-08-10 19:19:05,923 | INFO | ======================================================================
+2026-08-10 19:19:05,923 | INFO | DATA INSERTION SUMMARY
+2026-08-10 19:19:05,924 | INFO | ======================================================================
+2026-08-10 19:19:05,924 | INFO | Tables processed: 15
+2026-08-10 19:19:05,924 | INFO | Successful: 15
+2026-08-10 19:19:05,924 | INFO | Failed: 0
+2026-08-10 19:19:05,924 | INFO | Total time: 21.08 seconds
+
+2026-08-10 19:19:05,924 | INFO | ======================================================================
+2026-08-10 19:19:05,924 | INFO | BRONZE LAYER DATA INSERTION COMPLETED SUCCESSFULLY
+2026-08-10 19:19:05,924 | INFO | ======================================================================
+
+2026-08-10 19:19:05,925 | INFO | Database connection closed.
