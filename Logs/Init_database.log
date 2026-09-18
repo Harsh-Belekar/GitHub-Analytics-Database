@@ -1,0 +1,23 @@
+2026-08-10 18:50:06,634 | INFO | ======================================================================
+2026-08-10 18:50:06,635 | INFO | GitHub WAREHOUSE SETUP - STARTING
+2026-08-10 18:50:06,635 | INFO | ======================================================================
+2026-08-10 18:50:06,635 | INFO | Connecting to PostgreSQL Database...
+2026-08-10 18:50:06,716 | INFO | Database connection Established Successfully.
+
+2026-08-10 18:50:06,717 | INFO | ======================================================================
+2026-08-10 18:50:06,717 | INFO | Starting Schema Creation Process...
+2026-08-10 18:50:06,717 | INFO | ======================================================================
+2026-08-10 18:50:06,717 | INFO | Executing: `bronze` Schema Creation Query
+2026-08-10 18:50:06,724 | INFO | `bronze` Schema Created Successfully.
+2026-08-10 18:50:06,724 | INFO | Executing: `silver` Schema Creation Query
+2026-08-10 18:50:06,726 | INFO | `silver` Schema Created Successfully.
+2026-08-10 18:50:06,726 | INFO | Executing: `gold` Schema Creation Query
+2026-08-10 18:50:06,727 | INFO | `gold` Schema Created Successfully.
+2026-08-10 18:50:06,727 | INFO | All Schemas created successfully!
+
+2026-08-10 18:50:06,727 | INFO | ======================================================================
+2026-08-10 18:50:06,727 | INFO | GitHub WAREHOUSE SETUP COMPLETED SUCCESSFULLY
+2026-08-10 18:50:06,727 | INFO | Total time: 0.09 seconds
+2026-08-10 18:50:06,727 | INFO | ======================================================================
+
+2026-08-10 18:50:06,728 | INFO | Database connection closed.
