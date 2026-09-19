@@ -1,0 +1,33 @@
+2026-08-10 19:36:32,934 | INFO | ======================================================================
+2026-08-10 19:36:32,934 | INFO | CLEANING FUNCTION SETUP - STARTING
+2026-08-10 19:36:32,935 | INFO | ======================================================================
+2026-08-10 19:36:32,935 | INFO | Connecting to PostgreSQL Database...
+2026-08-10 19:36:32,990 | INFO | Database connection Established Successfully.
+
+2026-08-10 19:36:32,990 | INFO | ======================================================================
+2026-08-10 19:36:32,990 | INFO | Starting Cleaning Function Creation Process...
+2026-08-10 19:36:32,992 | INFO | ======================================================================
+2026-08-10 19:36:32,992 | INFO | Executing: cleaning Schema Query
+2026-08-10 19:36:33,012 | INFO | cleaning Schema Created Successfully in (0.02s).
+2026-08-10 19:36:33,012 | INFO | Executing: fn_parse_date Function Query
+2026-08-10 19:36:33,266 | INFO | fn_parse_date Function Created Successfully in (0.25s).
+2026-08-10 19:36:33,266 | INFO | Executing: fn_to_boolean Function Query
+2026-08-10 19:36:33,268 | INFO | fn_to_boolean Function Created Successfully in (0.00s).
+2026-08-10 19:36:33,268 | INFO | Executing: fn_clean_email Function Query
+2026-08-10 19:36:33,270 | INFO | fn_clean_email Function Created Successfully in (0.00s).
+2026-08-10 19:36:33,270 | INFO | ======================================================================
+2026-08-10 19:36:33,270 | INFO | CLEANING FUNCTION SUMMARY
+2026-08-10 19:36:33,270 | INFO | ======================================================================
+2026-08-10 19:36:33,271 | INFO | Total operations: 4
+2026-08-10 19:36:33,271 | INFO | Successful: 4
+2026-08-10 19:36:33,271 | INFO | Failed: 0
+2026-08-10 19:36:33,271 | INFO | ======================================================================
+
+2026-08-10 19:36:33,271 | INFO | All CLEANING Function created successfully!
+
+2026-08-10 19:36:33,271 | INFO | ======================================================================
+2026-08-10 19:36:33,271 | INFO | CLEANING FUNCTION CREATION COMPLETED SUCCESSFULLY
+2026-08-10 19:36:33,272 | INFO | Total time: 0.34 seconds
+2026-08-10 19:36:33,272 | INFO | ======================================================================
+
+2026-08-10 19:36:33,273 | INFO | Database connection closed.
