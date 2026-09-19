@@ -1,0 +1,77 @@
+2026-08-10 20:01:37,897 | INFO | ======================================================================
+2026-08-10 20:01:37,897 | INFO | SILVER LAYER DATA INSERTION - STARTING
+2026-08-10 20:01:37,897 | INFO | ======================================================================
+2026-08-10 20:01:37,898 | INFO | Connecting to PostgreSQL Database...
+2026-08-10 20:01:37,961 | INFO | Database connection Established Successfully.
+
+2026-08-10 20:01:37,961 | INFO | ======================================================================
+2026-08-10 20:01:37,962 | INFO | TRUNCATING TABLES
+2026-08-10 20:01:37,962 | INFO | ======================================================================
+2026-08-10 20:01:38,003 | INFO | Truncated silver.programming_languages: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,023 | INFO | Truncated silver.users: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,038 | INFO | Truncated silver.organizations: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,050 | INFO | Truncated silver.organization_members: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,066 | INFO | Truncated silver.repositories: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,077 | INFO | Truncated silver.repository_languages: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,089 | INFO | Truncated silver.repository_contributors: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,101 | INFO | Truncated silver.branches: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,117 | INFO | Truncated silver.commits: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,124 | INFO | Truncated silver.pull_requests: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,135 | INFO | Truncated silver.pull_request_reviews: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,143 | INFO | Truncated silver.issues: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,158 | INFO | Truncated silver.releases: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,170 | INFO | Truncated silver.stars: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,178 | INFO | Truncated silver.forks: 0 rows deleted, 0 remaining
+2026-08-10 20:01:38,179 | INFO | ======================================================================
+2026-08-10 20:01:38,179 | INFO | All tables truncated successfully
+2026-08-10 20:01:38,179 | INFO | ======================================================================
+
+2026-08-10 20:01:38,179 | INFO | ======================================================================
+2026-08-10 20:01:38,179 | INFO | Starting Silver Layer Data Insertion Process...
+2026-08-10 20:01:38,179 | INFO | ======================================================================
+2026-08-10 20:01:38,180 | INFO | Executing: silver.programming_languages Insertion Query
+2026-08-10 20:01:38,217 | INFO | silver.programming_languages Table Data Inserted Successfully in (0.04s).
+2026-08-10 20:01:38,217 | INFO | Executing: silver.users Insertion Query
+2026-08-10 20:01:38,655 | INFO | silver.users Table Data Inserted Successfully in (0.44s).
+2026-08-10 20:01:38,656 | INFO | Executing: silver.organizations Insertion Query
+2026-08-10 20:01:38,674 | INFO | silver.organizations Table Data Inserted Successfully in (0.02s).
+2026-08-10 20:01:38,674 | INFO | Executing: silver.organization_members Insertion Query
+2026-08-10 20:01:39,409 | INFO | silver.organization_members Table Data Inserted Successfully in (0.73s).
+2026-08-10 20:01:39,410 | INFO | Executing: silver.repositories Insertion Query
+2026-08-10 20:01:40,745 | INFO | silver.repositories Table Data Inserted Successfully in (1.34s).
+2026-08-10 20:01:40,745 | INFO | Executing: silver.repository_languages Insertion Query
+2026-08-10 20:01:41,595 | INFO | silver.repository_languages Table Data Inserted Successfully in (0.85s).
+2026-08-10 20:01:41,595 | INFO | Executing: silver.repository_contributors Insertion Query
+2026-08-10 20:01:44,365 | INFO | silver.repository_contributors Table Data Inserted Successfully in (2.77s).
+2026-08-10 20:01:44,366 | INFO | Executing: silver.branches Insertion Query
+2026-08-10 20:01:47,266 | INFO | silver.branches Table Data Inserted Successfully in (2.90s).
+2026-08-10 20:01:47,266 | INFO | Executing: silver.commits Insertion Query
+2026-08-10 20:02:50,239 | INFO | silver.commits Table Data Inserted Successfully in (62.97s).
+2026-08-10 20:02:50,240 | INFO | Executing: silver.pull_requests Insertion Query
+2026-08-10 20:02:53,613 | INFO | silver.pull_requests Table Data Inserted Successfully in (3.37s).
+2026-08-10 20:02:53,613 | INFO | Executing: silver.pull_request_reviews Insertion Query
+2026-08-10 20:02:56,413 | INFO | silver.pull_request_reviews Table Data Inserted Successfully in (2.80s).
+2026-08-10 20:02:56,413 | INFO | Executing: silver.issues Insertion Query
+2026-08-10 20:02:59,188 | INFO | silver.issues Table Data Inserted Successfully in (2.78s).
+2026-08-10 20:02:59,188 | INFO | Executing: silver.releases Insertion Query
+2026-08-10 20:03:00,275 | INFO | silver.releases Table Data Inserted Successfully in (1.09s).
+2026-08-10 20:03:00,275 | INFO | Executing: silver.stars Insertion Query
+2026-08-10 20:03:22,653 | INFO | silver.stars Table Data Inserted Successfully in (22.38s).
+2026-08-10 20:03:22,653 | INFO | Executing: silver.forks Insertion Query
+2026-08-10 20:03:25,170 | INFO | silver.forks Table Data Inserted Successfully in (2.52s).
+2026-08-10 20:03:25,170 | INFO | ======================================================================
+2026-08-10 20:03:25,170 | INFO | DATA INSERTION SUMMARY
+2026-08-10 20:03:25,170 | INFO | ======================================================================
+2026-08-10 20:03:25,170 | INFO | Total operations: 15
+2026-08-10 20:03:25,170 | INFO | Successful: 15
+2026-08-10 20:03:25,170 | INFO | Failed: 0
+2026-08-10 20:03:25,171 | INFO | ======================================================================
+
+2026-08-10 20:03:25,171 | INFO | All Data Inserted successfully!
+
+2026-08-10 20:03:25,171 | INFO | ======================================================================
+2026-08-10 20:03:25,171 | INFO | SILVER LAYER DATA INSERTION COMPLETED SUCCESSFULLY
+2026-08-10 20:03:25,171 | INFO | Total time: 107.27 seconds
+2026-08-10 20:03:25,171 | INFO | ======================================================================
+
+2026-08-10 20:03:25,177 | INFO | Database connection closed.
