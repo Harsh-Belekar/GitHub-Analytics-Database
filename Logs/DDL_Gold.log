@@ -1,0 +1,160 @@
+2026-08-15 01:22:38,847 | INFO | ======================================================================
+2026-08-15 01:22:38,848 | INFO | GitHub Data WAREHOUSE SETUP - STARTING
+2026-08-15 01:22:38,848 | INFO | ======================================================================
+2026-08-15 01:22:38,848 | INFO | Connecting to PostgreSQL Database...
+2026-08-15 01:22:38,919 | INFO | Database connection Established Successfully.
+
+2026-08-15 01:22:38,919 | INFO | ======================================================================
+2026-08-15 01:22:38,919 | INFO | DROPPING EXISTING TABLES
+2026-08-15 01:22:38,919 | INFO | ======================================================================
+2026-08-15 01:22:38,926 | INFO | Dropped table: dim_date
+2026-08-15 01:22:38,931 | INFO | Dropped table: dim_users
+2026-08-15 01:22:38,935 | INFO | Dropped table: dim_organizations
+2026-08-15 01:22:38,937 | INFO | Dropped table: dim_languages
+2026-08-15 01:22:38,944 | INFO | Dropped table: dim_repositories
+2026-08-15 01:22:38,948 | INFO | Dropped table: dim_branches
+2026-08-15 01:22:38,955 | INFO | Dropped table: fact_commits
+2026-08-15 01:22:38,961 | INFO | Dropped table: fact_pull_requests
+2026-08-15 01:22:38,966 | INFO | Dropped table: fact_pull_request_reviews
+2026-08-15 01:22:38,972 | INFO | Dropped table: fact_issues
+2026-08-15 01:22:38,977 | INFO | Dropped table: fact_releases
+2026-08-15 01:22:38,981 | INFO | Dropped table: fact_stars
+2026-08-15 01:22:38,985 | INFO | Dropped table: fact_forks
+2026-08-15 01:22:38,989 | INFO | Dropped table: fact_repository_contributors
+2026-08-15 01:22:38,992 | INFO | Dropped table: fact_repository_languages
+2026-08-15 01:22:38,997 | INFO | Dropped table: fact_organization_members
+2026-08-15 01:22:38,997 | INFO | ======================================================================
+2026-08-15 01:22:38,997 | INFO | Dropped 16/16 tables
+2026-08-15 01:22:38,997 | INFO | ======================================================================
+
+2026-08-15 01:22:38,997 | INFO | ======================================================================
+2026-08-15 01:22:38,997 | INFO | Starting Gold Layer Table Creation Process...
+2026-08-15 01:22:38,997 | INFO | ======================================================================
+2026-08-15 01:22:38,997 | INFO | Executing: dim_date Table Query
+2026-08-15 01:22:39,005 | INFO | dim_date Created Successfully in (0.01s).
+2026-08-15 01:22:39,005 | INFO | Executing: dim_users Table Query
+2026-08-15 01:22:39,026 | INFO | dim_users Created Successfully in (0.02s).
+2026-08-15 01:22:39,026 | INFO | Executing: dim_organizations Table Query
+2026-08-15 01:22:39,032 | INFO | dim_organizations Created Successfully in (0.01s).
+2026-08-15 01:22:39,033 | INFO | Executing: dim_languages Table Query
+2026-08-15 01:22:39,035 | INFO | dim_languages Created Successfully in (0.00s).
+2026-08-15 01:22:39,036 | INFO | Executing: dim_repositories Table Query
+2026-08-15 01:22:39,042 | INFO | dim_repositories Created Successfully in (0.01s).
+2026-08-15 01:22:39,042 | INFO | Executing: dim_branches Table Query
+2026-08-15 01:22:39,045 | INFO | dim_branches Created Successfully in (0.00s).
+2026-08-15 01:22:39,045 | INFO | Executing: fact_commits Table Query
+2026-08-15 01:22:39,050 | INFO | fact_commits Created Successfully in (0.01s).
+2026-08-15 01:22:39,050 | INFO | Executing: fact_pull_requests Table Query
+2026-08-15 01:22:39,054 | INFO | fact_pull_requests Created Successfully in (0.00s).
+2026-08-15 01:22:39,054 | INFO | Executing: fact_pull_request_reviews Table Query
+2026-08-15 01:22:39,059 | INFO | fact_pull_request_reviews Created Successfully in (0.00s).
+2026-08-15 01:22:39,059 | INFO | Executing: fact_issues Table Query
+2026-08-15 01:22:39,063 | INFO | fact_issues Created Successfully in (0.00s).
+2026-08-15 01:22:39,063 | INFO | Executing: fact_releases Table Query
+2026-08-15 01:22:39,066 | INFO | fact_releases Created Successfully in (0.00s).
+2026-08-15 01:22:39,066 | INFO | Executing: fact_stars Table Query
+2026-08-15 01:22:39,069 | INFO | fact_stars Created Successfully in (0.00s).
+2026-08-15 01:22:39,069 | INFO | Executing: fact_forks Table Query
+2026-08-15 01:22:39,072 | INFO | fact_forks Created Successfully in (0.00s).
+2026-08-15 01:22:39,073 | INFO | Executing: fact_repository_contributors Table Query
+2026-08-15 01:22:39,076 | INFO | fact_repository_contributors Created Successfully in (0.00s).
+2026-08-15 01:22:39,076 | INFO | Executing: fact_repository_languages Table Query
+2026-08-15 01:22:39,079 | INFO | fact_repository_languages Created Successfully in (0.00s).
+2026-08-15 01:22:39,079 | INFO | Executing: fact_organization_members Table Query
+2026-08-15 01:22:39,082 | INFO | fact_organization_members Created Successfully in (0.00s).
+2026-08-15 01:22:39,082 | INFO | ======================================================================
+2026-08-15 01:22:39,082 | INFO | TABLE CREATION SUMMARY
+2026-08-15 01:22:39,082 | INFO | ======================================================================
+2026-08-15 01:22:39,083 | INFO | Total operations: 16
+2026-08-15 01:22:39,083 | INFO | Successful: 16
+2026-08-15 01:22:39,083 | INFO | Failed: 0
+2026-08-15 01:22:39,083 | INFO | ======================================================================
+
+2026-08-15 01:22:39,083 | INFO | All Tables created successfully!
+
+2026-08-15 01:22:39,083 | INFO | ======================================================================
+2026-08-15 01:22:39,083 | INFO | DROPPING EXISTING INDEXES
+2026-08-15 01:22:39,083 | INFO | ======================================================================
+2026-08-15 01:22:39,083 | INFO | Dropped index: idx_gold_commits_repo
+2026-08-15 01:22:39,084 | INFO | Dropped index: idx_gold_commits_user
+2026-08-15 01:22:39,084 | INFO | Dropped index: idx_gold_commits_date
+2026-08-15 01:22:39,084 | INFO | Dropped index: idx_gold_prs_repo
+2026-08-15 01:22:39,085 | INFO | Dropped index: idx_gold_prs_author
+2026-08-15 01:22:39,085 | INFO | Dropped index: idx_gold_prs_date
+2026-08-15 01:22:39,085 | INFO | Dropped index: idx_gold_reviews_repo
+2026-08-15 01:22:39,086 | INFO | Dropped index: idx_gold_reviews_reviewer
+2026-08-15 01:22:39,086 | INFO | Dropped index: idx_gold_issues_repo
+2026-08-15 01:22:39,086 | INFO | Dropped index: idx_gold_issues_user
+2026-08-15 01:22:39,087 | INFO | Dropped index: idx_gold_issues_date
+2026-08-15 01:22:39,087 | INFO | Dropped index: idx_gold_releases_repo
+2026-08-15 01:22:39,087 | INFO | Dropped index: idx_gold_stars_repo
+2026-08-15 01:22:39,088 | INFO | Dropped index: idx_gold_forks_source_repo
+2026-08-15 01:22:39,088 | INFO | Dropped index: idx_gold_contributors_repo
+2026-08-15 01:22:39,088 | INFO | Dropped index: idx_gold_repo_languages_repo
+2026-08-15 01:22:39,089 | INFO | Dropped index: idx_gold_org_members_org
+2026-08-15 01:22:39,089 | INFO | Dropped index: idx_gold_dim_repos_org
+2026-08-15 01:22:39,089 | INFO | Dropped index: idx_gold_dim_repos_owner
+2026-08-15 01:22:39,090 | INFO | Dropped index: idx_gold_dim_branches_repo
+2026-08-15 01:22:39,090 | INFO | ======================================================================
+2026-08-15 01:22:39,090 | INFO | Dropped 20/20 tables
+2026-08-15 01:22:39,090 | INFO | ======================================================================
+
+2026-08-15 01:22:39,090 | INFO | ======================================================================
+2026-08-15 01:22:39,090 | INFO | Starting Gold Layer Indexes Creation Process...
+2026-08-15 01:22:39,090 | INFO | ======================================================================
+2026-08-15 01:22:39,090 | INFO | Executing: CREATE INDEX idx_gold_commits_repo ON gold.fact_commits (repository_id) Index Query
+2026-08-15 01:22:39,092 | INFO | idx_gold_commits_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,092 | INFO | Executing: CREATE INDEX idx_gold_commits_user ON gold.fact_commits (user_id) Index Query
+2026-08-15 01:22:39,094 | INFO | idx_gold_commits_user Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,095 | INFO | Executing: CREATE INDEX idx_gold_commits_date ON gold.fact_commits (date_key) Index Query
+2026-08-15 01:22:39,097 | INFO | idx_gold_commits_date Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,097 | INFO | Executing: CREATE INDEX idx_gold_prs_repo ON gold.fact_pull_requests (repository_id) Index Query
+2026-08-15 01:22:39,099 | INFO | idx_gold_prs_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,100 | INFO | Executing: CREATE INDEX idx_gold_prs_author ON gold.fact_pull_requests (author_id) Index Query
+2026-08-15 01:22:39,102 | INFO | idx_gold_prs_author Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,102 | INFO | Executing: CREATE INDEX idx_gold_prs_date ON gold.fact_pull_requests (date_key) Index Query
+2026-08-15 01:22:39,104 | INFO | idx_gold_prs_date Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,104 | INFO | Executing: CREATE INDEX idx_gold_reviews_repo ON gold.fact_pull_request_reviews (repository_id) Index Query
+2026-08-15 01:22:39,107 | INFO | idx_gold_reviews_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,107 | INFO | Executing: CREATE INDEX idx_gold_reviews_reviewer ON gold.fact_pull_request_reviews (reviewer_id) Index Query
+2026-08-15 01:22:39,109 | INFO | idx_gold_reviews_reviewer Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,109 | INFO | Executing: CREATE INDEX idx_gold_issues_repo ON gold.fact_issues (repository_id) Index Query
+2026-08-15 01:22:39,112 | INFO | idx_gold_issues_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,112 | INFO | Executing: CREATE INDEX idx_gold_issues_user ON gold.fact_issues (user_id) Index Query
+2026-08-15 01:22:39,114 | INFO | idx_gold_issues_user Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,114 | INFO | Executing: CREATE INDEX idx_gold_issues_date ON gold.fact_issues (date_key) Index Query
+2026-08-15 01:22:39,116 | INFO | idx_gold_issues_date Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,117 | INFO | Executing: CREATE INDEX idx_gold_releases_repo ON gold.fact_releases (repository_id) Index Query
+2026-08-15 01:22:39,119 | INFO | idx_gold_releases_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,119 | INFO | Executing: CREATE INDEX idx_gold_stars_repo ON gold.fact_stars (repository_id) Index Query
+2026-08-15 01:22:39,121 | INFO | idx_gold_stars_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,121 | INFO | Executing: CREATE INDEX idx_gold_forks_source_repo ON gold.fact_forks (source_repository_id) Index Query
+2026-08-15 01:22:39,124 | INFO | idx_gold_forks_source_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,124 | INFO | Executing: CREATE INDEX idx_gold_contributors_repo ON gold.fact_repository_contributors (repository_id) Index Query
+2026-08-15 01:22:39,126 | INFO | idx_gold_contributors_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,126 | INFO | Executing: CREATE INDEX idx_gold_repo_languages_repo ON gold.fact_repository_languages (repository_id) Index Query
+2026-08-15 01:22:39,128 | INFO | idx_gold_repo_languages_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,128 | INFO | Executing: CREATE INDEX idx_gold_org_members_org ON gold.fact_organization_members (organization_id) Index Query
+2026-08-15 01:22:39,130 | INFO | idx_gold_org_members_org Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,130 | INFO | Executing: CREATE INDEX idx_gold_dim_repos_org ON gold.dim_repositories (organization_id) Index Query
+2026-08-15 01:22:39,133 | INFO | idx_gold_dim_repos_org Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,133 | INFO | Executing: CREATE INDEX idx_gold_dim_repos_owner ON gold.dim_repositories (owner_id) Index Query
+2026-08-15 01:22:39,135 | INFO | idx_gold_dim_repos_owner Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,135 | INFO | Executing: CREATE INDEX idx_gold_dim_branches_repo ON gold.dim_branches (repository_id) Index Query
+2026-08-15 01:22:39,137 | INFO | idx_gold_dim_branches_repo Index Created Successfully in (0.00s).
+2026-08-15 01:22:39,137 | INFO | ======================================================================
+2026-08-15 01:22:39,137 | INFO | INDEX CREATION SUMMARY
+2026-08-15 01:22:39,138 | INFO | ======================================================================
+2026-08-15 01:22:39,138 | INFO | Total operations: 20
+2026-08-15 01:22:39,138 | INFO | Successful: 20
+2026-08-15 01:22:39,138 | INFO | Failed: 0
+2026-08-15 01:22:39,138 | INFO | ======================================================================
+
+2026-08-15 01:22:39,138 | INFO | All Indexes created successfully!
+
+2026-08-15 01:22:39,138 | INFO | ======================================================================
+2026-08-15 01:22:39,138 | INFO | GOLD LAYER TABLES & INDEXES CREATION COMPLETED SUCCESSFULLY
+2026-08-15 01:22:39,138 | INFO | Total time: 0.29 seconds
+2026-08-15 01:22:39,138 | INFO | ======================================================================
+
+2026-08-15 01:22:39,139 | INFO | Database connection closed.
