@@ -1,0 +1,80 @@
+2026-08-15 01:23:38,269 | INFO | ======================================================================
+2026-08-15 01:23:38,269 | INFO | GOLD LAYER DATA INSERTION - STARTING
+2026-08-15 01:23:38,269 | INFO | ======================================================================
+2026-08-15 01:23:38,269 | INFO | Connecting to PostgreSQL Database...
+2026-08-15 01:23:38,342 | INFO | Database connection Established Successfully.
+
+2026-08-15 01:23:38,342 | INFO | ======================================================================
+2026-08-15 01:23:38,342 | INFO | TRUNCATING TABLES
+2026-08-15 01:23:38,342 | INFO | ======================================================================
+2026-08-15 01:23:38,356 | INFO | Truncated gold.dim_date: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,372 | INFO | Truncated gold.dim_users: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,383 | INFO | Truncated gold.dim_organizations: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,392 | INFO | Truncated gold.dim_languages: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,412 | INFO | Truncated gold.dim_repositories: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,423 | INFO | Truncated gold.dim_branches: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,448 | INFO | Truncated gold.fact_commits: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,471 | INFO | Truncated gold.fact_pull_requests: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,496 | INFO | Truncated gold.fact_pull_request_reviews: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,522 | INFO | Truncated gold.fact_issues: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,539 | INFO | Truncated gold.fact_releases: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,555 | INFO | Truncated gold.fact_stars: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,570 | INFO | Truncated gold.fact_forks: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,585 | INFO | Truncated gold.fact_repository_contributors: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,600 | INFO | Truncated gold.fact_repository_languages: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,615 | INFO | Truncated gold.fact_organization_members: 0 rows deleted, 0 remaining
+2026-08-15 01:23:38,616 | INFO | ======================================================================
+2026-08-15 01:23:38,616 | INFO | All tables truncated successfully
+2026-08-15 01:23:38,616 | INFO | ======================================================================
+
+2026-08-15 01:23:38,616 | INFO | ======================================================================
+2026-08-15 01:23:38,616 | INFO | Starting Gold Layer Data Insertion Process...
+2026-08-15 01:23:38,616 | INFO | ======================================================================
+2026-08-15 01:23:38,616 | INFO | Executing: gold.dim_date Insertion Query
+2026-08-15 01:23:38,666 | INFO | gold.dim_date Table Data Inserted Successfully in (0.05s).
+2026-08-15 01:23:38,666 | INFO | Executing: gold.dim_users Insertion Query
+2026-08-15 01:23:38,707 | INFO | gold.dim_users Table Data Inserted Successfully in (0.04s).
+2026-08-15 01:23:38,707 | INFO | Executing: gold.dim_organizations Insertion Query
+2026-08-15 01:23:38,722 | INFO | gold.dim_organizations Table Data Inserted Successfully in (0.01s).
+2026-08-15 01:23:38,722 | INFO | Executing: gold.dim_languages Insertion Query
+2026-08-15 01:23:38,730 | INFO | gold.dim_languages Table Data Inserted Successfully in (0.01s).
+2026-08-15 01:23:38,730 | INFO | Executing: gold.dim_repositories Insertion Query
+2026-08-15 01:23:38,883 | INFO | gold.dim_repositories Table Data Inserted Successfully in (0.15s).
+2026-08-15 01:23:38,883 | INFO | Executing: gold.dim_branches Insertion Query
+2026-08-15 01:23:39,808 | INFO | gold.dim_branches Table Data Inserted Successfully in (0.92s).
+2026-08-15 01:23:39,808 | INFO | Executing: gold.fact_commits Insertion Query
+2026-08-15 01:23:51,972 | INFO | gold.fact_commits Table Data Inserted Successfully in (12.16s).
+2026-08-15 01:23:51,972 | INFO | Executing: gold.fact_pull_requests Insertion Query
+2026-08-15 01:23:53,753 | INFO | gold.fact_pull_requests Table Data Inserted Successfully in (1.78s).
+2026-08-15 01:23:53,753 | INFO | Executing: gold.fact_pull_request_reviews Insertion Query
+2026-08-15 01:23:55,951 | INFO | gold.fact_pull_request_reviews Table Data Inserted Successfully in (2.20s).
+2026-08-15 01:23:55,952 | INFO | Executing: gold.fact_issues Insertion Query
+2026-08-15 01:23:58,406 | INFO | gold.fact_issues Table Data Inserted Successfully in (2.45s).
+2026-08-15 01:23:58,406 | INFO | Executing: gold.fact_releases Insertion Query
+2026-08-15 01:23:58,847 | INFO | gold.fact_releases Table Data Inserted Successfully in (0.44s).
+2026-08-15 01:23:58,847 | INFO | Executing: gold.fact_stars Insertion Query
+2026-08-15 01:24:11,353 | INFO | gold.fact_stars Table Data Inserted Successfully in (12.51s).
+2026-08-15 01:24:11,353 | INFO | Executing: gold.fact_forks Insertion Query
+2026-08-15 01:24:13,951 | INFO | gold.fact_forks Table Data Inserted Successfully in (2.60s).
+2026-08-15 01:24:13,951 | INFO | Executing: gold.fact_repository_contributors Insertion Query
+2026-08-15 01:24:14,566 | INFO | gold.fact_repository_contributors Table Data Inserted Successfully in (0.61s).
+2026-08-15 01:24:14,567 | INFO | Executing: gold.fact_repository_languages Insertion Query
+2026-08-15 01:24:14,812 | INFO | gold.fact_repository_languages Table Data Inserted Successfully in (0.24s).
+2026-08-15 01:24:14,812 | INFO | Executing: gold.fact_organization_members Insertion Query
+2026-08-15 01:24:14,929 | INFO | gold.fact_organization_members Table Data Inserted Successfully in (0.12s).
+2026-08-15 01:24:14,929 | INFO | ======================================================================
+2026-08-15 01:24:14,930 | INFO | DATA INSERTION SUMMARY
+2026-08-15 01:24:14,930 | INFO | ======================================================================
+2026-08-15 01:24:14,930 | INFO | Total operations: 16
+2026-08-15 01:24:14,930 | INFO | Successful: 16
+2026-08-15 01:24:14,930 | INFO | Failed: 0
+2026-08-15 01:24:14,930 | INFO | ======================================================================
+
+2026-08-15 01:24:14,930 | INFO | All Data Inserted successfully!
+
+2026-08-15 01:24:14,930 | INFO | ======================================================================
+2026-08-15 01:24:14,930 | INFO | GOLD LAYER DATA INSERTION COMPLETED SUCCESSFULLY
+2026-08-15 01:24:14,931 | INFO | Total time: 36.66 seconds
+2026-08-15 01:24:14,931 | INFO | ======================================================================
+
+2026-08-15 01:24:14,936 | INFO | Database connection closed.
