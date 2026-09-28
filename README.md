@@ -1,5 +1,7 @@
 # 🚀 GitHub Analytics Database
 
+![Schema](Images/Banner.png)
+
 An End-to-End **GitHub Analytics Database and Data Warehouse project** built with **Python, PostgreSQL, Advanced SQL, and Medallion Architecture**.
 
 The project simulates **GitHub's interconnected Software-Development Data and Transforms** it through a structured **Bronze → Silver → Gold** data warehouse pipeline. The final **Gold layer** provides **Business-ready** **Fact tables**, **Dimension tables**, **Analytical Views**, and **SQL-based** insights for **Repository**, **Developer**, **Commit**, **Pull Request**, **Issue**, **Release**, **Organization**, **Programming Language**, **Community**, and **Data-Quality Analysis.**
@@ -1117,7 +1119,7 @@ scope**.
 
 All datasets used in this project are **dummy, synthetic, or public** — generated programmatically using Python for learning and portfolio demonstration purposes only.
 
-**No real customer data, restaurant data, or proprietary Samsung information has been used.**
+**No real customer data, restaurant data, or proprietary GitHub information has been used.**
 This project is not affiliated with, endorsed by, or connected to Samsung in any way.
 
 ---
